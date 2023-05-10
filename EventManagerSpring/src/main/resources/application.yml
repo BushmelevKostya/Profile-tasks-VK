@@ -1,15 +1,15 @@
 spring:
   datasource:
-    driverClassName: com.mysql.jdbc.Driver
-    url: jdbc:mysql://localhost:5432/db;
+    driverClassName: org.h2.Driver
+    url: jdbc:h2:~/test;
     username: sa
     password:
-    mysql:
+    h2:
       console:
         enabled: true
   jpa:
     hibernate:
-      ddl-auto: update
+      ddl-auto: create
     generate-ddl: true
     show-sql: false
     properties:

@@ -1,7 +1,7 @@
 package com.server.eventmanagerspring.controller;
 
 import com.server.eventmanagerspring.model.Client;
-import com.server.eventmanagerspring.service.ClientService;
+import com.server.eventmanagerspring.services.ClientService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

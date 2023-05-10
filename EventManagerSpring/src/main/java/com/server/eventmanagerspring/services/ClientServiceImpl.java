@@ -1,4 +1,4 @@
-package com.server.eventmanagerspring.service;
+package com.server.eventmanagerspring.services;
 
 import com.server.eventmanagerspring.model.Client;
 import org.springframework.stereotype.Service;
@@ -10,8 +10,8 @@ import java.util.Map;
 import java.util.concurrent.atomic.AtomicInteger;
 
 @Service
-public class ClientServiceImpl implements ClientService{
-	private static final Map<Integer, Client> CLIENT_REPOSITORY_MAP = new HashMap<>();
+public class ClientServiceImpl implements ClientService {
+	public static final Map<Integer, Client> CLIENT_REPOSITORY_MAP = new HashMap<>();
 	public static final AtomicInteger CLIENT_ID_HOLDER = new AtomicInteger();
 	@Override
 	public void create(Client client) {

@@ -1,11 +1,13 @@
-package com.server.eventmanagerspring.service;
+package com.server.eventmanagerspring.services;
 
 import com.server.eventmanagerspring.model.Client;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
-
-public interface ClientService {
+@Repository
+public interface ClientService{
 	void create(Client client);
+	
 	List<Client> readAll();
 	Client read(int id);
 	boolean update(Client client, int id);
