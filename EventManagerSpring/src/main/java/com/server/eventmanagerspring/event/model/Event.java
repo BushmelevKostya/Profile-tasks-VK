@@ -1,9 +1,9 @@
-package com.server.eventmanagerspring.model;
+package com.server.eventmanagerspring.event.model;
 
-import jakarta.persistence.*;
 import org.hibernate.annotations.GenericGenerator;
 
-import java.time.LocalDateTime;
+import javax.persistence.*;
+import java.time.LocalDate;
 
 @Entity
 @Table(name = "event")
@@ -19,7 +19,7 @@ public class Event {
 	@Column(name = "state")
 	private String state;
 	@Column(name = "time")
-	private LocalDateTime time = LocalDateTime.now();
+	private LocalDate time = LocalDate.now();
 	
 	public Event() {
 	}
@@ -58,11 +58,11 @@ public class Event {
 		this.state = state;
 	}
 	
-	public LocalDateTime getTime() {
+	public LocalDate getTime() {
 		return time;
 	}
 	
-	public void setTime(LocalDateTime time) {
+	public void setTime(LocalDate time) {
 		this.time = time;
 	}
 	

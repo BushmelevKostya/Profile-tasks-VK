@@ -1,8 +1,6 @@
-package com.server.eventmanagerspring.builder;
+package com.server.eventmanagerspring.event.builder;
 
-import com.server.eventmanagerspring.model.Event;
-
-import java.time.LocalDateTime;
+import com.server.eventmanagerspring.event.model.Event;
 
 public class Director {
 	private Builder builder;

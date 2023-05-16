@@ -1,8 +1,8 @@
-package com.server.eventmanagerspring.builder;
+package com.server.eventmanagerspring.event.builder;
 
-import com.server.eventmanagerspring.model.Event;
+import com.server.eventmanagerspring.event.model.Event;
 
-import java.time.LocalDateTime;
+import java.time.LocalDate;
 
 public class EventBuilder implements Builder{
 	private Event event;
@@ -32,7 +32,7 @@ public class EventBuilder implements Builder{
 	
 	@Override
 	public void setTime() {
-		this.event.setTime(LocalDateTime.now());
+		this.event.setTime(LocalDate.now());
 	}
 	
 	@Override
