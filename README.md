@@ -16,7 +16,7 @@
 <h4>Ссылка на рабочее публичное API:</h4>
 
 <p><a href="https://eventmanager.cfapps.us10-001.hana.ondemand.com/events">event-mahager/events</a></p>
-<p>Ссылка на сай выглядит так: </p>
+<p>Ссылка на сайт выглядит так: </p>
 
 `https://eventmanager.cfapps.us10-001.hana.ondemand.com`
 <p>Если к ней добавить `/events`, то получим список всех событий :</p>
