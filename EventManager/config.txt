@@ -1,0 +1,2 @@
+jdbc:postgresql:COREJAVA
+jdbc:derby://localhost:1527/COREJAVA; create=true
